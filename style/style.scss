@@ -1,0 +1,110 @@
+@import "typography";
+@import "colors";
+@import "navbar";
+@import "header";
+@import "startsettings";
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main {
+    height: 100vh;
+    background: url(../images/start-screen-gradient-background.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    // gap: 160px;
+    &__nav {
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $white;
+        &__logo {
+        }
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            gap: 35px;
+            font-size: 15px;
+            &__link {
+            }
+            &__link_active {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        margin: 0 auto;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 42px;
+            &__title {
+                max-width: 310px;
+                font-size: 44px;
+                color: $white;
+            }
+            &__subtitle {
+                color: $subtitle;
+                font-size: 15px;
+                width: 460px;
+            }
+            &__button {
+                padding: 15px 45px;
+                width: 207px;
+                height: 52px;
+                background: $primary;
+                border-radius: 100px;
+            }
+        }
+        &__img {
+            img {
+            }
+        }
+    }
+}
+.about {
+    // max-width: ;width: 1200px;
+    display: flex;
+    flex-direction: row;
+    &__left {
+        display: flex;
+        flex-basis: 50%;
+    }
+    &__right {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 94px;
+        margin-bottom: 94px;
+        &__title {
+            color: $lightgrey;
+            font-family: Georgia;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 45px;
+            letter-spacing: 0.06em;
+            text-align: left;
+            width: 370px;
+        }
+        &__subtitle {
+            max-width: 430px;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: $grey;
+        }
+    }
+}
