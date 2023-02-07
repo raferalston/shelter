@@ -1,0 +1,50 @@
+
+.help {
+    background: $white;
+    .wrapper {
+    }
+    &__title {
+        font-family: Georgia;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 45px;
+        letter-spacing: 0.06em;
+        color: $lightgrey;
+        text-align: center;
+        margin-top: 80px;
+    }
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        &__first {
+            display: flex;
+            flex-direction: row;
+            gap: 120px;
+            justify-content: center;
+            margin-bottom: 60px;
+            margin-top: 60px;
+            .box1, .box2, .box3, .box4, .box5 {
+                text-align: center;
+                width: 143px;
+                height: 113px; //СДЕЛАТЬ РАССТОЯНИЕ 30ПИКСЕЛЕЙ МЕЖДУ ФОТКОЙ И ТЕКСТОМ
+                h3 {
+                    padding-top: 30px;
+                }
+            }
+        }
+        &__second {
+            display: flex;
+            flex-direction: row;
+            // gap: 120px;
+            justify-content: space-evenly;
+            margin-bottom: 80px;
+            .box6, .box7, .box8, .box9 {
+                text-align: center;
+                h3 {
+                    padding-top: 30px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,57 @@
+
+.carousel {
+    background: $darkbackground;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__title {
+        font-family: Georgia;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 45px;
+        letter-spacing: 0.06em;
+        color: $lightgrey;
+        // max-width: 400px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        gap: 90px;
+        &__fill {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+            font-family: Georgia;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            background: $lightbackground;
+            padding-bottom: 15px;
+            button {
+                border: 1px solid $primary;
+                background-color: $lightbackground;
+                border-radius: 100px;
+                padding: 15px 45px;
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        button {
+        background-color: $primary;
+        border-radius: 100px;
+        border: 0;
+        padding: 15px 45px;
+    }
+    }
+}

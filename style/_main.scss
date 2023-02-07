@@ -1,0 +1,64 @@
+.main {
+    height: 100vh;
+    background: url(../images/start-screen-gradient-background.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    &__nav {
+        // width: 1200px;
+        // margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $white;
+        &__logo {
+        }
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            gap: 35px;
+            font-size: 15px;
+            &__link {
+            }
+            &__link_active {
+                text-decoration: underline;
+                text-decoration-color: $primary;
+            }
+        }
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        // width: 1200px;
+        // margin: 0 auto;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 42px;
+            &__title {
+                max-width: 310px;
+                font-size: 44px;
+                color: $white;
+            }
+            &__subtitle {
+                color: $subtitle;
+                font-size: 15px;
+                width: 460px;
+            }
+            &__button {
+                padding: 15px 45px;
+                width: 207px;
+                height: 52px;
+                background: $primary;
+                border-radius: 100px;
+            }
+        }
+        &__img {
+            img {
+                height: 82.8%;
+            }
+        }
+    }
+}

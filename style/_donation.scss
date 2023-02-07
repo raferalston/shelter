@@ -1,0 +1,63 @@
+.donation {
+    background-color: $darkbackground;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 80px;
+        padding-top: 60px; }
+    &__img {
+        display: flex;
+        flex-basis: 50%;
+    }
+    &__text {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 20px;
+        h1 {
+            font-family: Georgia;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 45px;
+            letter-spacing: 0.06em;
+            color: $lightgrey;
+            text-align: left;
+            margin-top: 80px; }
+        p {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: 0.06em;
+            color: $grey;}
+        &__card {
+            display: flex;
+            flex-direction: row;
+            width: 380px;
+            background-color: $primary;
+            border-radius: 10px;
+            img {
+            padding: 10px 15px;
+            }
+            h2 {
+            padding: 10px 15px;
+            font-family: Georgia;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            text-align: left;
+            }
+        }
+        .itallic {
+            font-family: 'Arial';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #B2B2B2;
+        }
+    }
+}
